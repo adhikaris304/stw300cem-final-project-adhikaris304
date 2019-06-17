@@ -1,4 +1,4 @@
-package com.example.needhelp;
+package com.example.helpinghand2;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

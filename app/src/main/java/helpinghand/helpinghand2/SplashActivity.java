@@ -1,9 +1,8 @@
-package com.example.needhelp;
+package helpinghand.helpinghand2;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.practice.R;
@@ -22,8 +21,8 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(SplashActivity.this,MainActivity.class);
-                startActivity(intent);
+//                Intent intent=new Intent(SplashActivity.this, MainActivity.class);
+//                startActivity(intent);
                 finish();
             }
         },5000);

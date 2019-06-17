@@ -9,17 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.needhelp.SplashActivity">
+        <activity android:name="helpinghand.helpinghand2.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name="com.example.needhelp.DashboardActivity" />
-        <activity android:name="com.example.needhelp.SignupActivity" />
-        <activity android:name="com.example.needhelp.MainActivity">
-
         </activity>
     </application>
 

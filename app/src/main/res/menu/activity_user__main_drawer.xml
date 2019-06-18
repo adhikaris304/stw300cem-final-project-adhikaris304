@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@mipmap/home"
+            android:title="@string/app_name" />
+        <item
+            android:id="@+id/nav_cleaner"
+            android:icon="@mipmap/cleaner_icon"
+            android:title="@string/cleaner" />
+
+        <item
+            android:id="@+id/nav_electrician"
+            android:icon="@mipmap/electrician_icon"
+            android:title="@string/elctrician" />
+        <item
+            android:id="@+id/nav_laptop_repairer"
+            android:icon="@mipmap/laptoprepairer_icon"
+            android:title="@string/laptoprepairer" />
+        <item
+            android:id="@+id/nav_plumber"
+            android:icon="@mipmap/plumber_icon"
+            android:title="@string/plumber" />
+
+    </group>
+
+    <item android:title="User">
+        <menu>
+
+            <item
+                android:id="@+id/nav_panal"
+                android:icon="@mipmap/ic_list_black_24dp"
+                android:title="Your Panal" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/logout" />
+
+        </menu>
+    </item>
+
+</menu>

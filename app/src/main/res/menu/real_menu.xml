@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_how_to_use"
+        android:icon="@mipmap/home"
+        android:title="Setting" />
+    <item
+        android:id="@+id/menu_contact_us"
+        android:icon="@mipmap/home"
+        android:title="Contact" />
+</menu>

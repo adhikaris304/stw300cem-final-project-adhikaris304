@@ -8,8 +8,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
-import helpinghand.helpinghand2.forUser.Professional;
-
 /**
  * Created by Rasil10 on 2017-07-11.
  */

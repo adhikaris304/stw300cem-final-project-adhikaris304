@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import helpinghand.helpinghand2.R;
-import helpinghand.helpinghand2.forUser.Professional;
 
 /**
  * Created by Rasil10 on 2017-07-28.

@@ -23,7 +23,11 @@ public class User {
         this.role = role;
     }
 
+<<<<<<< HEAD
     public User(String id,String name, String address, String email, String phone, String password, String role) {
+=======
+    public User(String id, String name, String address, String email, String phone, String password, String role) {
+>>>>>>> forUser
        this.id=id;
         this.name = name;
         this.phone = phone;

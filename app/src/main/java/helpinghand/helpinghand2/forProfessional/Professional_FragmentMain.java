@@ -21,9 +21,7 @@ import java.util.ArrayList;
 import helpinghand.helpinghand2.Booking;
 import helpinghand.helpinghand2.R;
 
-/**
- * Created by Rasil10 on 2017-07-10.
- */
+
 
 public class Professional_FragmentMain extends Fragment {
     private DatabaseReference mDatabase;

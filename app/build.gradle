@@ -35,6 +35,8 @@ dependencies {
     implementation 'io.doorbell:android-sdk:0.2.6@aar'
 
     implementation 'junit:junit:4.12'
+
+
 }
 
 apply plugin: 'com.google.gms.google-services'

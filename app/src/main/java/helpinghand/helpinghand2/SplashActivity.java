@@ -5,11 +5,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.practice.R;
 
-/**
- * Created by ssaurel on 02/12/2016.
- */
+
+
 public class SplashActivity extends AppCompatActivity {
 
     @Override
@@ -21,8 +19,8 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-//                Intent intent=new Intent(SplashActivity.this, MainActivity.class);
-//                startActivity(intent);
+                Intent intent=new Intent(SplashActivity.this, LoginActivity.class);
+                startActivity(intent);
                 finish();
             }
         },5000);

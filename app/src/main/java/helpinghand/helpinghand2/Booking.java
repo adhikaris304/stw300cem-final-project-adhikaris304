@@ -1,8 +1,6 @@
 package helpinghand.helpinghand2;
 
-/**
- * Created by Rasil10 on 2017-07-10.
- */
+
 
 public class Booking {
     String id;

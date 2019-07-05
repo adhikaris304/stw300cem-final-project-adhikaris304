@@ -11,9 +11,7 @@ import android.widget.LinearLayout;
 
 import helpinghand.helpinghand2.R;
 
-/**
- * Created by Rasil10 on 2017-07-04.
- */
+
 
 public class SearchByCategory extends Fragment {
     LinearLayout cleaner_ll,plumber_ll,laptoprepairer_ll,electrician_ll;

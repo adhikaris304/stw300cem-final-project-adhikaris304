@@ -11,9 +11,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-/**
- * Created by Rasil10 on 2017-05-26.
- */
+import helpinghand.helpinghand2.forUser.User;
+
 
 public class RegisterUser1 {
     DatabaseReference databaseReference;

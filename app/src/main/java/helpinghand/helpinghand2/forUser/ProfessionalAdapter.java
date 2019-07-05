@@ -23,9 +23,7 @@ import java.util.ArrayList;
 
 import helpinghand.helpinghand2.R;
 
-/**
- * Created by Rasil10 on 2017-05-19.
- */
+
 
 public class ProfessionalAdapter extends ArrayAdapter<Professional> {
     DatabaseReference databaseReference;

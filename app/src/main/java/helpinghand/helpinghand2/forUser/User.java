@@ -1,8 +1,6 @@
 package helpinghand.helpinghand2.forUser;
 
-/**
- * Created by Rasil10 on 2017-05-26.
- */
+
 
 public class User {
     String id,name,phone,address,password,email,role;
@@ -23,11 +21,10 @@ public class User {
         this.role = role;
     }
 
-<<<<<<< HEAD
+
     public User(String id,String name, String address, String email, String phone, String password, String role) {
-=======
-    public User(String id, String name, String address, String email, String phone, String password, String role) {
->>>>>>> forUser
+
+
        this.id=id;
         this.name = name;
         this.phone = phone;

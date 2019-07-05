@@ -1,8 +1,6 @@
 package helpinghand.helpinghand2.forUser;
 
-/**
- * Created by Rasil10 on 2017-05-19.
- */
+
 
 public class Professional {
     String id;

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="helpinghand.helpinghand2">
-
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -22,30 +21,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Sensor.Light_Sensor"></activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-<<<<<<< HEAD
-
-
-        <activity android:name="helpinghand.helpinghand2.SplashActivity">
-
-        </activity>
-        <activity android:name="helpinghand.helpinghand2.LoginActivity">
-=======
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/app_name">
->>>>>>> Services
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-=======
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"></activity>
         <activity
             android:name=".forUser.User_MainActivity"
             android:label="@string/app_name"
@@ -55,13 +46,33 @@
             android:label="Helping Hand"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".forUser.Detail_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".forUser.MapsActivity_forUser"
+            android:label="@string/title_activity_maps_for_user" />
+        <activity
+            android:name=".forUser.User_WelcomeMessageAndroid"
+            android:label="@string/app_name" />
+        <activity
             android:name=".forProfessional.Professional_WelcomeMessageAndroid"
             android:label="@string/app_name" />
         <activity
             android:name=".forProfessional.ProPanal"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
->>>>>>> Services
+        <activity
+            android:name=".forUser.UserPanal"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".forUser.SearchByNearest"
+            android:label="@string/title_activity_search_by_nearest" />
+        <activity android:name=".forUser.BookingDetail" />
+        <activity
+            android:name=".Services.FbCommentsActivity"
+            android:label="@string/title_activity_comments"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

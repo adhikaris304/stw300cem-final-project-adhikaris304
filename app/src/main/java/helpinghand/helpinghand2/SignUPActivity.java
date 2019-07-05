@@ -21,9 +21,7 @@ import helpinghand.helpinghand2.Services.RegisterUser1;
 import helpinghand.helpinghand2.forUser.User;
 
 
-/**
- * Created by Rasil10 on 2017-07-07.
- */
+
 
 public class SignUPActivity extends AppCompatActivity {
     private EditText name_ET,  phone_ET, email_ET, password1_ET, password2_ET;

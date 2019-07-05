@@ -23,9 +23,7 @@ import java.util.ArrayList;
 
 import helpinghand.helpinghand2.R;
 
-/**
- * Created by Rasil10 on 2017-07-07.
- */
+
 
 public class SearchByRating extends Fragment {
     ArrayList<Professional> professionals = new ArrayList<Professional>();

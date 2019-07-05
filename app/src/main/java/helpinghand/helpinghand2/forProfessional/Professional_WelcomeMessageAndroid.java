@@ -10,9 +10,7 @@ import android.widget.RelativeLayout;
 
 import helpinghand.helpinghand2.R;
 
-/**
- * Created by Rasil10 on 2017-07-09.
- */
+
 
 public class Professional_WelcomeMessageAndroid extends AppCompatActivity {
     RelativeLayout introMessage;

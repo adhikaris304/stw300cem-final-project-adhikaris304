@@ -25,9 +25,7 @@ import java.util.ArrayList;
 
 import helpinghand.helpinghand2.R;
 
-/**
- * Created by Rasil10 on 2017-07-07.
- */
+
 
 public class SearchByLocation extends Fragment {
     // ArrayList<String> locationalist = new ArrayList<String>();

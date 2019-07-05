@@ -17,9 +17,6 @@ import android.widget.TextView;
 import helpinghand.helpinghand2.LoginActivity;
 import helpinghand.helpinghand2.R;
 
-/**
- * Created by Rasil10 on 2017-07-08.
- */
 
 public class ProPanal extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     private DrawerLayout mDrawerLayout;

@@ -24,9 +24,7 @@ import java.util.ArrayList;
 
 import helpinghand.helpinghand2.R;
 
-/**
- * Created by Rasil10 on 2017-07-04.
- */
+
 
 public class User_FragmentMain extends Fragment {
     SharedPreferences preferences;

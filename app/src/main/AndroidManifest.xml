@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="helpinghand.helpinghand2">
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -17,23 +18,50 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Helping Hand"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
 
+<<<<<<< HEAD
 
 
         <activity android:name="helpinghand.helpinghand2.SplashActivity">
 
         </activity>
         <activity android:name="helpinghand.helpinghand2.LoginActivity">
+=======
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+>>>>>>> Services
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+=======
+        <activity
+            android:name=".forUser.User_MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignUPActivity"
+            android:label="Helping Hand"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".forProfessional.Professional_WelcomeMessageAndroid"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".forProfessional.ProPanal"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+>>>>>>> Services
     </application>
 
 </manifest>

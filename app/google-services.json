@@ -1,148 +1,37 @@
 {
   "project_info": {
-    "project_number": "387307252893",
-    "firebase_url": "https://helpinghanddemo1.firebaseio.com",
-    "project_id": "helpinghanddemo1",
-    "storage_bucket": "helpinghanddemo1.appspot.com"
+    "project_number": "498327920683",
+    "firebase_url": "https://helpinghand-13c2a.firebaseio.com",
+    "project_id": "helpinghand-13c2a",
+    "storage_bucket": "helpinghand-13c2a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:387307252893:android:b290f9bcbf9eefc4",
-        "android_client_info": {
-          "package_name": "helpinghand.helpinghanddemo1"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "387307252893-t1f3vjagjo1slriqa1431bv278flpo03.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "helpinghand.helpinghanddemo1",
-            "certificate_hash": "31ff759be4d5089dbb86018f1a16e9522ebd5f6e"
-          }
-        },
-        {
-          "client_id": "387307252893-9avapccdbbmjbalv387j5m17l7cpv1c0.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC5UAYyUzpP33CtiC-dh-nS4A1PnMBWl8A"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "387307252893-9avapccdbbmjbalv387j5m17l7cpv1c0.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:387307252893:android:005954385afd4bc9",
-        "android_client_info": {
-          "package_name": "helpinghand.helpinghand"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "387307252893-ct32of0vhi23t5ov9vim7bl4tlo46on6.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "helpinghand.helpinghand",
-            "certificate_hash": "31ff759be4d5089dbb86018f1a16e9522ebd5f6e"
-          }
-        },
-        {
-          "client_id": "387307252893-9avapccdbbmjbalv387j5m17l7cpv1c0.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC5UAYyUzpP33CtiC-dh-nS4A1PnMBWl8A"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "387307252893-9avapccdbbmjbalv387j5m17l7cpv1c0.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:387307252893:android:c835df3e92b1ebbc",
+        "mobilesdk_app_id": "1:498327920683:android:c835df3e92b1ebbc",
         "android_client_info": {
           "package_name": "helpinghand.helpinghand2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "387307252893-muo870vm7gvvoq8659thsbi9onskuc0j.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "helpinghand.helpinghand2",
-            "certificate_hash": "33a3800a2de1df300e569e327426936b27b6eed0"
-          }
-        },
-        {
-          "client_id": "387307252893-vud8or4nhl74r0be3vjjrm1f6ni5ut0c.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "helpinghand.helpinghand2",
-            "certificate_hash": "31ff759be4d5089dbb86018f1a16e9522ebd5f6e"
-          }
-        },
-        {
-          "client_id": "387307252893-9avapccdbbmjbalv387j5m17l7cpv1c0.apps.googleusercontent.com",
+          "client_id": "498327920683-1mp1nq34vq1hvjalpcvvivkejhp7qnfl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC5UAYyUzpP33CtiC-dh-nS4A1PnMBWl8A"
+          "current_key": "AIzaSyC2K4tQBB_HxDFioXKYovun3ZpqxfNh5c0"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "387307252893-9avapccdbbmjbalv387j5m17l7cpv1c0.apps.googleusercontent.com",
+              "client_id": "498327920683-1mp1nq34vq1hvjalpcvvivkejhp7qnfl.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

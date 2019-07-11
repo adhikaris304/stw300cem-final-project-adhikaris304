@@ -199,7 +199,7 @@ public class BookingDetail extends AppCompatActivity implements DatePickerDialog
         Notification notification = new NotificationCompat.Builder(this,CreateChannel.CHANNEL_1)
                 .setSmallIcon(R.drawable.notification_icon)
                 .setContentTitle("Booked")
-                .setContentText("Professional has been booked on")
+                .setContentText("Professional has been booked")
                 .setCategory(NotificationCompat.CATEGORY_SYSTEM)
                 .build();
 

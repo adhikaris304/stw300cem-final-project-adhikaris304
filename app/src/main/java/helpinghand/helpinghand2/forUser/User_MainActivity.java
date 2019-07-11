@@ -44,8 +44,8 @@ public class User_MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user__main);
-
-        proximity();
+        sensor();
+//        proximity();
         preferences=getSharedPreferences("loginInfo",0);
 
         String registeredUser_name = preferences.getString("UserName","");
@@ -223,26 +223,52 @@ public class User_MainActivity extends AppCompatActivity
         }
         return haveConnectedWifi || haveConnectedMobile;
     }
-    private void proximity() {
+//    private void proximity() {
+//        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+//        Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+//        SensorEventListener proxilistener = new SensorEventListener() {
+//            @Override
+//            public void onSensorChanged(SensorEvent event) { if (event.values[0] <= 1) {
+//                Intent intent=new Intent(Intent.ACTION_MAIN);
+//                intent.addCategory(Intent.CATEGORY_HOME);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                startActivity(intent);
+//            }
+//            }
+//
+//            @Override
+//            public void onAccuracyChanged(Sensor sensor, int accuracy) {
+//
+//            }
+//        };
+//        sensorManager.registerListener(proxilistener,sensor, SensorManager.SENSOR_DELAY_NORMAL);
+
+//    }
+    private void sensor() {
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-        Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
-        SensorEventListener proxilistener = new SensorEventListener() {
+        Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
+        SensorEventListener listener = new SensorEventListener() {
             @Override
-            public void onSensorChanged(SensorEvent event) { if (event.values[0] <= 1) {
-                Intent intent=new Intent(Intent.ACTION_MAIN);
-                intent.addCategory(Intent.CATEGORY_HOME);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-            }
+            public void onSensorChanged(SensorEvent event) {
+                if (event.values[1] < -2) {
+                    Intent intent = new Intent(User_MainActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
 
             @Override
             public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
+
             }
         };
-        sensorManager.registerListener(proxilistener,sensor, SensorManager.SENSOR_DELAY_NORMAL);
+        if (sensor != null) {
+            sensorManager.registerListener(listener, sensor, sensorManager.SENSOR_DELAY_NORMAL);
 
+        } else {
+            Toast.makeText(this, "Please try again", Toast.LENGTH_SHORT).show();
+        }
     }
 
 }

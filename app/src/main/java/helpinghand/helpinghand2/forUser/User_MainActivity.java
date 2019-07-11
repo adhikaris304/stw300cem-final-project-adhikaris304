@@ -8,6 +8,10 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -34,11 +38,14 @@ public class User_MainActivity extends AppCompatActivity
     private ActionBarDrawerToggle mToggle;
     private Toolbar mToolbar;
     SharedPreferences preferences;
+    private SensorManager sensorManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user__main);
+
+        proximity();
         preferences=getSharedPreferences("loginInfo",0);
 
         String registeredUser_name = preferences.getString("UserName","");
@@ -215,6 +222,27 @@ public class User_MainActivity extends AppCompatActivity
                     haveConnectedMobile = true;
         }
         return haveConnectedWifi || haveConnectedMobile;
+    }
+    private void proximity() {
+        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        SensorEventListener proxilistener = new SensorEventListener() {
+            @Override
+            public void onSensorChanged(SensorEvent event) { if (event.values[0] <= 1) {
+                Intent intent=new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+            }
+
+            @Override
+            public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+            }
+        };
+        sensorManager.registerListener(proxilistener,sensor, SensorManager.SENSOR_DELAY_NORMAL);
+
     }
 
 }

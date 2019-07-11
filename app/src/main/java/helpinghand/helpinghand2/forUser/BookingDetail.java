@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.TimePickerDialog;
@@ -17,6 +18,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -32,9 +34,10 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import helpinghand.helpinghand2.Booking;
 import helpinghand.helpinghand2.R;
+import helpinghand.helpinghand2.createchannel.CreateChannel;
 
 public class BookingDetail extends AppCompatActivity implements DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
-    Button show_btn;
+    Button show_btn, book;
     static final int START_TIME_ID = 0;
     static final int END_TIME_ID = 1;
     int day, month, year, hour, minute;
@@ -43,6 +46,9 @@ public class BookingDetail extends AppCompatActivity implements DatePickerDialog
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
 
+    NotificationManagerCompat notificationManagerCompat;
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +72,10 @@ public class BookingDetail extends AppCompatActivity implements DatePickerDialog
         Button showtime1 = (Button) findViewById(R.id.startingtime_btn);
         Button noofHours = (Button) findViewById(R.id.noof_hours_btn);
         Button book = (Button) findViewById(R.id.book);
+
+        notificationManagerCompat = NotificationManagerCompat.from(this);
+        CreateChannel channel = new CreateChannel(this);
+        channel.createChannel();
 
 
         pname.setText(professionalName);
@@ -136,6 +146,7 @@ public class BookingDetail extends AppCompatActivity implements DatePickerDialog
                                     addtopanal(professional,booking);
 
 
+
                                     NotificationCompat.Builder mBuilder =
                                             new NotificationCompat.Builder(BookingDetail.this);
                                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com/"));
@@ -176,9 +187,25 @@ public class BookingDetail extends AppCompatActivity implements DatePickerDialog
                     Toast.makeText(BookingDetail.this,"Select Date and Time.",Toast.LENGTH_SHORT).show();
                 }
 
+                DisplayNotification1();
             }
         });
 
+
+    }
+
+    int id = 1;
+    private void DisplayNotification1(){
+        Notification notification = new NotificationCompat.Builder(this,CreateChannel.CHANNEL_1)
+                .setSmallIcon(R.drawable.notification_icon)
+                .setContentTitle("Booked")
+                .setContentText("Professional has been booked on")
+                .setCategory(NotificationCompat.CATEGORY_SYSTEM)
+                .build();
+
+
+        notificationManagerCompat.notify(id, notification);
+        id++;
 
     }
 
